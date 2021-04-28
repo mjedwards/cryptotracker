@@ -1,6 +1,5 @@
 import React from 'react';
 import Accordion from './Accordion';
-import CoinButton from './coinButton'
 
 
 const CoinInfo = (props) => {
