@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  color: #F09333;
+  font-size: x-large;
+  margin-bottom: 50px;
+}
+
+.coinContainer {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.cryptoLogo {
+  width: 15%;
+  margin-bottom: 20px;
+}
