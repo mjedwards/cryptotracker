@@ -4,10 +4,10 @@ import {LineChart, CartesianGrid, Tooltip, YAxis, XAxis, Legend, Line} from 'rec
 
 
 const CoinGraph = (props) => {
-    const lowerName = props.name.toLowerCase();
+    // const lowerName = props.name.toLowerCase();
     const [graphData, setGraphData] = useState([{}]);
     useEffect(() => {
-        axios.get(`https://api.coingecko.com/api/v3/coins/${lowerName}/market_chart?vs_currency=usd&days=30&interval=daily`).then((response) => {
+        axios.get(`https://api.coingecko.com/api/v3/coins/${props.name.toLowerCase()}/market_chart?vs_currency=usd&days=30&interval=daily`).then((response) => {
                 setGraphData(response.data.prices.map(i => {
                     return {
                         name: i,
